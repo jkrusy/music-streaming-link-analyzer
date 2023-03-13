@@ -1,0 +1,9 @@
+services:
+  composer:
+    image: composer:2.5
+    volumes:
+      - .:/app
+  php:
+    build: docker/php
+    volumes:
+      - .:/app
